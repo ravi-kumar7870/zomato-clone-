@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Highlight color on hover */
+}
+
+.cta-button {
+    background-color: #e63946; /* Call to action color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d62839; /* Darker shade on hover */
+}
+.hero {
+    background-image: url('image/pizza-3007395_1280.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* White text */
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 13, 13, 0.5); /* Dark overlay for better text contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Bring content above the overlay */
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+.features {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between features */
+}
+
+.feature {
+    background-color: #444; /* Slightly lighter dark background for features */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text for descriptions */
+}
+.special-offers {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between offers */
+}
+
+.offer {
+    background-color: #444; /* Slightly lighter dark background for offers */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text for descriptions */
+}
+
+.cta-button {
+    background-color: #e63946; /* Call to action color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure proper button styling */
+    margin-top: 10px; /* Space above the button */
+}
+
+.cta-button:hover {
+    background-color: #d62839; /* Darker shade on hover */
+}
+.why-choose-us {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.usp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between unique selling points */
+}
+
+.usp {
+    background-color: #444; /* Slightly lighter dark background for USPs */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.usp:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text for descriptions */
+}
+.testimonials {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between testimonials */
+}
+
+.testimonial {
+    background-color: #444; /* Slightly lighter dark background for testimonials */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text for testimonials */
+    margin: 0 0 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #e63946; /* Highlight color for names */
+}
+.location-finder {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.location-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.location-input input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px; /* Fixed width for input */
+    background-color: #444; /* Slightly lighter dark background */
+    color: #fff; /* White text */
+}
+
+.location-input .cta-button {
+    background-color: #e63946; /* Call to action color */
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.location-input .cta-button:hover {
+    background-color: #d62839; /* Darker shade on hover */
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 800px; /* Limit max width for the map */
+}
+
+.map-container iframe {
+    width: 100%; /* Responsive map */
+    height: 400px; /* Fixed height */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+}
+.newsletter-signup {
+    background-color: #2c2c2c; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.signup-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.signup-input input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px; /* Fixed width for input */
+    background-color: #444; /* Slightly lighter dark background */
+    color: #fff; /* White text */
+}
+
+.signup-input .cta-button {
+    background-color: #e63946; /* Call to action color */
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.signup-input .cta-button:hover {
+    background-color: #d62839; /* Darker shade on hover */
+}
+
+
